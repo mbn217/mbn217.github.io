@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "My First Blog Post",
+    "date": "2025-05-01",
+    "content": "Welcome to my blog! This is an example of a blog post with an `inline code` example and a code block below.\n```js\nconsole.log('Hello, world!');\n```"
+  },
+  {
+    "id": 2,
+    "title": "Another Post",
+    "date": "2025-06-15",
+    "content": "Here's another post. You can continue writing more posts in this JSON file.\n\nJust use backticks for `inline code` and triple backticks for code blocks.\n```js\nfunction add(a, b) { return a + b; }\n```"
+  }
+]
