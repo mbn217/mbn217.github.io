@@ -10,9 +10,9 @@
 </head>
 <body>
   <header>
-    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
-      <i class="fas fa-moon"></i>
-    </button>
+    <div class="logo">
+      <img src="images/me.png" alt="Profile Picture" class="profile-image">
+    </div>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -22,65 +22,152 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <div class="header-actions">
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank" class="github" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://discord.gg/yourinvite" target="_blank" class="discord" aria-label="Discord">
+          <i class="fab fa-discord"></i>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="linkedin" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
+        <i class="fas fa-moon"></i>
+        <span>Theme</span>
+      </button>
+    </div>
   </header>
 
   <main class="container">
     <section id="about" class="section">
       <h2>About Me</h2>
-      <div class="card">
-        <p>I'm a passionate Software Engineer focused on building elegant and interactive web applications.</p>
+      <div class="hero-section">
+        <div class="card">
+          <h3>Software Engineer</h3>
+          <p>I'm a passionate Software Engineer focused on building elegant and interactive web applications. I specialize in creating user-friendly experiences that solve real-world problems.</p>
+          <div class="cta-buttons">
+            <a href="#contact" class="primary-button">Get in Touch</a>
+            <a href="#projects" class="secondary-button">View Projects</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="skills" class="section">
-      <h2>Skills</h2>
+      <h2>Skills & Expertise</h2>
       <div class="skills-grid">
-        <div class="card">JavaScript</div>
-        <div class="card">HTML & CSS</div>
-        <div class="card">Angular</div>
-        <div class="card">React</div>
-        <div class="card">Node.js</div>
-        <div class="card">Java</div>
+        <div class="card">
+          <i class="fab fa-js fa-2x"></i>
+          <h3>JavaScript</h3>
+          <p>Modern ES6+, TypeScript</p>
+        </div>
+        <div class="card">
+          <i class="fab fa-html5 fa-2x"></i>
+          <h3>HTML & CSS</h3>
+          <p>Responsive Design, SASS</p>
+        </div>
+        <div class="card">
+          <i class="fab fa-angular fa-2x"></i>
+          <h3>Angular</h3>
+          <p>Enterprise Applications</p>
+        </div>
+        <div class="card">
+          <i class="fab fa-react fa-2x"></i>
+          <h3>React</h3>
+          <p>Modern UI Development</p>
+        </div>
+        <div class="card">
+          <i class="fab fa-node-js fa-2x"></i>
+          <h3>Node.js</h3>
+          <p>Backend Development</p>
+        </div>
+        <div class="card">
+          <i class="fab fa-java fa-2x"></i>
+          <h3>Java</h3>
+          <p>Enterprise Solutions</p>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="section">
-      <h2>Projects</h2>
+      <h2>Featured Projects</h2>
       <div class="projects-grid">
-        <div class="card">
-          <h3>Portfolio Website</h3>
-          <p>A sleek personal portfolio to showcase my projects and blog posts.</p>
+        <div class="card project-card">
+          <div class="project-header">
+            <h3>Portfolio Website</h3>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <p>A sleek personal portfolio to showcase my projects and blog posts, built with modern web technologies.</p>
+          <div class="tech-stack">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Tailwind</span>
+          </div>
         </div>
-        <div class="card">
-          <h3>Task Manager App</h3>
-          <p>A productivity tool to manage daily tasks using Angular and Firebase.</p>
+        <div class="card project-card">
+          <div class="project-header">
+            <h3>Task Manager App</h3>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <p>A productivity tool to manage daily tasks using Angular and Firebase, featuring real-time updates.</p>
+          <div class="tech-stack">
+            <span>Angular</span>
+            <span>Firebase</span>
+            <span>SCSS</span>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="blog" class="section">
-      <h2>Blog</h2>
-      <div class="card">
-        <h3>Writing Clean Code</h3>
-        <p>Tips and strategies for writing clean, maintainable code in any language.</p>
-        <pre><code>// Example snippet
+      <h2>Latest Articles</h2>
+      <div class="blog-grid">
+        <div class="card blog-card">
+          <h3>Writing Clean Code</h3>
+          <p>Tips and strategies for writing clean, maintainable code in any language.</p>
+          <pre><code>// Example of clean code
 function greet(name) {
   return `Hello, ${name}`;
 }</code></pre>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="section">
-      <h2>Contact</h2>
-      <div class="card">
-        <p>Email: example@example.com</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/example" target="_blank">My Profile</a></p>
+      <h2>Get in Touch</h2>
+      <div class="card contact-card">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:example@example.com">example@example.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/example" target="_blank">LinkedIn Profile</a>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/example" target="_blank">GitHub Profile</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 My Portfolio. All rights reserved.
+    <div class="footer-content">
+      <p>&copy; 2025 My Portfolio. Built with <i class="fas fa-heart"></i></p>
+    </div>
   </footer>
 </body>
 </html>
