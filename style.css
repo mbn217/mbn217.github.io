@@ -273,11 +273,71 @@ h2 {
 
 .skills-grid .card {
   text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-.skills-grid i {
+.skills-grid .card i {
   color: var(--primary-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.skills-grid .card:hover i {
+  transform: scale(1.2);
+}
+
+.skills-grid .card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+}
+
+.dark-theme .skills-grid .card h3 {
+  color: var(--text-dark);
+}
+
+.skills-grid .card p {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  opacity: 0.8;
+}
+
+.dark-theme .skills-grid .card p {
+  color: var(--text-dark);
+  opacity: 0.8;
+}
+
+/* Custom colors for specific technology icons */
+.skills-grid .card i.fa-aws {
+  color: #FF9900;
+}
+
+.skills-grid .card i.fa-java {
+  color: #007396;
+}
+
+.skills-grid .card i.fa-js {
+  color: #F7DF1E;
+}
+
+.skills-grid .card i.fa-code-branch {
+  color: #2ECC71;
+}
+
+.skills-grid .card i.fa-cogs {
+  color: #3498DB;
+}
+
+.skills-grid .card i.fa-vial {
+  color: #9B59B6;
+}
+
+.dark-theme .skills-grid .card i {
+  opacity: 0.9;
 }
 
 .project-card .project-header {
